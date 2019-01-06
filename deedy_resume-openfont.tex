@@ -1,0 +1,221 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Siddarth Sreeni 
+%
+
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Siddarth}{Sreeni}{ 
+\href{mailto:sidda2158@gmail.com}{sidda2158@gmail.com} | +91-9400502158
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{BITS-Pilani}
+\descript{B.E(honors) in Electrical and Electronics Engineering}
+\location{Grad. 2018 | $7.3$}
+\sectionsep
+
+\subsection{Vijayagiri Public School}
+\descript{Senior High School}
+\location{Grad. May 2014  | $94.0$}
+\sectionsep
+
+\subsection{Toc-H Public School}
+\descript{High School}
+\location{Grad. May 2012 | $9.6$}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+LinkedIn://  \href{https://www.linkedin.com/in/siddarth-sreeni/}{\custombold{siddarth-sreeni}} \\
+StackOverflow:// \href{https://stackoverflow.com/users/5801823/siddarth-sreeni}{\custombold{siddarth-sreeni}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Expertise}
+\subsection{Technologies Used/Worked On}
+Amazon Web Services \\
+DevOps\\
+Application design and development\\
+NoSQL - DynamoDB, Cassandra \\
+RDBMS - Oracle DBMS, PostGreSQL \\
+Micro-services \\
+Artificial Intelligence \\
+Cloud Computing
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\textbullet{} Dockers \textbullet{} Apache Ignite \textbullet{} Apache Spark \\
+\textbullet{} Kubernetes \textbullet{} DCOS, Mesos \textbullet{}  ECR\\
+\textbullet{} Fargate \textbullet{} AWS Lambda, SQS \textbullet{} SNS \\
+\textbullet{} DAX \textbullet{} Android \textbullet{} C \textbullet{} Linux \\
+\textbullet{} Distributed Data \textbullet{} Shell scripting \\
+\textbullet{} scala \textbullet{} python \textbullet{} SQL \\ 
+\textbullet{} C++ \textbullet{} Java \textbullet{} Git \textbullet{} Jenkins\\
+\textbullet{} EC2 \textbullet{} AWS dynamoDB \textbullet{} Open Source 
+\sectionsep
+
+
+\section{interests} 
+
+\textbullet{} Reading \textbullet{} Travelling \\
+\textbullet{} Tech savvying\\
+\textbullet{} Sports e.g. Basket Bakk, Football\\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{HERE Technologies / Nokia HERE MAPS}
+
+\descript{Software Engineer II, Mumbai }
+\location{July 2018 – Present}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Pioneered a drastic change to micro-services architecture from the existing relational model. Part of the driving team that initiated the changed of the decade old legacy systems and software.
+\item Successfully worked on enhancing the API-services, Production support and also worked on state of the art technology mostly on AWS.
+\item Proficient in legacy software codes and part of the team that is charge of the major transition. 
+\end{tightemize}
+
+\descript{R\&D Research Intern, Mumbai }
+\location{Jan 2018 – June 2018}
+\begin{tightemize}\item Worked on a POC on AWS using fargate to replace CONTROL-M; a job scheduling which later went onto be showcased in engineering show case. Earned learn fast and win-together appreciations from leader ship
+\item Re-wrote the house number location prediction using machine learning and analysed the problem statement. Currently in production environment.
+\item Worked on the initial framework and successfully converted a tightly coupled RDBMS data structure to NoSQL.
+\end{tightemize}
+\sectionsep
+
+\sectionsep
+
+\runsubsection{K.S.E.D.C, Gov.t of Kerala}
+
+\descript{ Research Intern }
+\location{July 2016 – Aug 2017 | Trivandrum, Kerala}
+\begin{tightemize}\item Implementation of an Echo sounder on Open Source Hardware- (ARM 64 based processor) and software platforms.
+\item Designed a Software for mapping the depth of the ocean floor logging data and plotting it in real time as used in the Indian Navy Ships and Vehicles.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{IOT in TinyOS}
+\location{Jan-May 2016 |  BITS Pilani}
+Used Telosb Motes to communicate with each other and send data to and fro across the internet
+Mentor: Dr. Anupama K.R
+\sectionsep
+
+\runsubsection{Image processing using Machine Learning}
+\location{Aug–Dec 2016 | BITS Pilani}
+A comparison based study of classifying different 3D scan medical images (MRI) using different ML algorithms in Cuda.
+Mentor: Dr. Anita Aggrawal.
+\sectionsep
+
+\runsubsection{Maritime data gathering and statistical analysis.}
+\location{Oct2017–Mar 2018 | BITS Pilani}
+Maritime data gathering and statistical analysis.
+Mentor . Dr. R. P. Pradhan.
+\sectionsep
+
+\runsubsection{GPU Governor for SD820 SOC- Adreno 530}
+\location{May 2017}
+•Similar to on-demand but less intense than MSM-Adreno from Qualcomm 
+•Graceful scaling of GPU frequency covering all frequency unlike performance mode 
+\sectionsep
+\end{minipage} 
+\subsection{}{Publications} 
+\begin{tightemize} \item Siddarth Sreeni., Hari S R., Harikrishnan R., Sreejith V., "Multi-Modal Posture Recognition System for Healthcare Applications" IEEE TENCON, South Korea, Oct 2018\\
+\item Siddarth Sreeni., Sahitya Tahiliani., Tushar Gothankar., "Machine Learning Based Maximum Power Point Tracking In Tidal/Ocean Energy Conversion Systems" - International Journal  of Electronics, Electrical and Data Communication ,Volume 5 Issue 4
+\end{tightemize}
+
+\end{document}
